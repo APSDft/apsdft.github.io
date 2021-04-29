@@ -10,8 +10,8 @@ permalink: /
     <div class="row">
       <div class="col-md-10 col-md-offset-2">
         <div class="block">
-          <h1 class="animated fadeInUp">UNIVERSAL FUNCTIONALS<br> A voyage to DFT </h1>
-          <p class="animated fadeInUp">Computing is Exciting</p>
+          <h1 class="animated fadeInUp"> UNIVERSAL FUNCTIONAL<br> A Voyage to DFT </h1>
+          <p class="animated fadeInUp"> Computing is Exciting </p>
         </div>
       </div>
     </div>
@@ -25,41 +25,46 @@ permalink: /
         <div class="block">
           <div class="section-title">
             <h2 id="about-me">About Me</h2>
-            <p>I am a Computational Scientist in the making, with a varied interests ranging from Physics to Quantum Biology. I am currently pursuing my Ph.D. from a reputed institute focusing on Density Functional Theory and Molecular Dynamics study of 2D materials for variety of uses. I also have interests in Mathematics, detective stories, Football, Olympic sports and Travelling</p>
+            <p>{{ site.data.about.about-me }}</p>
           </div>
-          <p style="text-align: center">
-          	<a href="mailto:arkas.physics@gmail.com"><i class="fa fa-envelope" style="font-size:24px"></i></a> &nbsp;
-          	<a href="https://www.linkedin.com/in/quantum-arka-phys-497052/"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
-          </p>
-          <!--
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p>
-          -->
 
+          {% if site.data.about.about-me-more %}
+          <p> {{ site.data.about.about-me-more }} </p>
+         {% endif %}
+         
+          <p style="text-align: center">
+          {% for social in site.data.contacts.social-links %}
+          	<a href="{{ social.link }}"><i class="{{ social.icon }}" style="font-size:24px"></i></a> &nbsp;
+  	  {% endfor %}
+          </p>
+          
         </div> 
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">
         <div class="block">
-          <img src="img/wrapper-img.png" alt="Img">
+          <img src="{{ site.data.about.wrap-img }}" alt="Img">
         </div>
       </div><!-- .col-md-5 close -->
     </div>
   </div>
 </section>
-<!--
+<!-- will disappear-->
+{% if site.data.feature %}
 <section id="feature">
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-6">
-      <h2>WE BELIEVE IN GREAT IDEAS</h2>
-      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <a href="#" class="btn btn-view-works">View Works</a>
+      <h2> {{ site.data.feature.tagline }} </h2>
+      {% for para in site.data.feature.paragraph %}
+      <p> {{ para }}</p>
+      {% endfor %}
+      <a href="{{ site.data.feature.but-url }}" class="btn btn-view-works"> {{ site.data.feature.but-title }} </a>
     </div>
   </div>
 </div>
 </section>
--->
+{% endif %}
+<!--upto this-->
 <!-- Service Start -->
 <!--
 <section id="service">
@@ -130,16 +135,16 @@ permalink: /
     </div>
   </div>
 </section>
--->
+
 <!-- Call to action Start -->
 <section id="call-to-action">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h2>We design delightful digital experiences.</h2>
-          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
+          <h2> {{ site.data.about.action-title }} </h2>
+          <p> {{ site.data.about.action-description }} </p>
+          <a class="btn btn-default btn-call-to-action" href="{{ site.data.about.action-url }}" > {{ site.data.about.action-botton }} </a>
         </div>
       </div>
     </div>

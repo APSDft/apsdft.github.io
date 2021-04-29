@@ -1,0 +1,7 @@
+social-links:
+ - name: Email
+   link: mailto:arkas.physics@gmail.com
+   icon: fa fa-envelope
+ - name: Linkedin
+   link: https://www.linkedin.com/in/quantum-arka-phys-497052/
+   icon: fa fa-linkedin
