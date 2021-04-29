@@ -6,7 +6,7 @@ exclude:
   - LICENSE.md
   - '*.gemspec'
   - work.html
-  - liquids
+  - left-over
 keep_files:
   - CNAME
   - .git
@@ -15,8 +15,9 @@ title: Universal Functional
 subtitle: Computing is Exciting
 url: null
 baseurl: ""
-cover: img/cover.png
+cover: img/slider-bg.jpg
 logo: img/logo.png
+disqus-id: 
 markdown: kramdown
 descriptions:
   - cat: jekyll

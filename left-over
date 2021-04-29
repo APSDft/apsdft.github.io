@@ -1,0 +1,16 @@
+disqus
+tags
+add images
+citing style
+pagination
+feed
+form action
+
+
+
+----
+
+contact page:
+
+address and email comes from about.yml file.,,,,, site.data,about.address/email
+social links are in social-links.yml
