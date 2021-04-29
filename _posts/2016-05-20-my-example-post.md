@@ -7,11 +7,17 @@ abstract: Summury/abstract goes here fgasjfgs vgsdugfks fyoasf sdyfoidsy fyoaiyf
 math: true
 ---
 
-## How to put linked test:
+## How to put linked text:
+
+## This is done by listing below
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
+This link is done by [inline](https://www.google.com) method
+
 {% comment %}
+Just to include comment
+---
 Might you have an include in your theme? Why not try it here!
 {% include my-themes-great-include.html %}
 {% endcomment %}
