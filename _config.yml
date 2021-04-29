@@ -14,9 +14,9 @@ keep_files:
 title: Universal Functional
 subtitle: Computing is Exciting
 url: null
-baseurl: ""
-cover: /img/cover.png
-logo: /img/logo.png
+baseurl: /blog
+cover: img/cover.png
+logo: img/logo.png
 markdown: kramdown
 descriptions:
   - cat: jekyll
