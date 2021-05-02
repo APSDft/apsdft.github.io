@@ -60,9 +60,22 @@ inline test &nbsp; \\(p = \gamma mv \quad  \\)
 
 No laudem altera adolescens has, volumus lucilius eum no. Eam ei nulla audiam efficiantur. Suas affert per no, ei tale nibh sea. Sea ne magna harum, in denique scriptorem sea, cetero alienum tibique ei eos. Labores persequeris referrentur eos ei.
 
+Link other [post]({% post_url 2016-05-20-this-post-demonstrates-post-content-styles %}) using liquid tag
+
+{% comment %}
+![train](/img/item-img1.jpg)
+{% endcomment %}
+
+<center>
+<img src="/img/item-img1.jpg" alt="image demo" height="50" width="50" >
+</center>
+
+### A possible way to Cite 
+let's say, [1]
+and more text ...
 
 
-
+[1] [On the Electrodynamics of Moving Bodies](https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies){:target="_blank"}
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
