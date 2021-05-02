@@ -18,6 +18,20 @@ layout: page
                 <p> {{ page.abstract }} </P>
              <div class="post-info-wrapper">
               <p class="italic">By <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%B %-d, %Y" }}</span></p>
+              <p>
+              {% unless page.tags.size==0 %}
+              	<i class="fa fa-tags" style="font-size:20px"></i>&nbsp;
+              	{% for tag in page.tags %}
+              	 #{{ tag }}
+              	{% endfor %}
+              {% endunless %}
+              <br>
+              {% assign words = content | number_of_words %}
+              {%- unless content.size == 0 -%}
+               <i class="fa fa-clock-o" style="font-size:20px"></i>  {{ words | divided_by:180 }} Min &nbsp;
+              {% endunless %}
+              <i class="fa fa-comments" style="font-size:20px"></i> <a href="{{post.url | absolute_url}}#disqus_thread"> Comments </a>
+              </p>
             </div>
                 </div>
               </div>

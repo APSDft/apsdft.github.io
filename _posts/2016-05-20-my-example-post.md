@@ -4,6 +4,10 @@ author: test author
 title: new title
 cover: /img/featue-bg.jpg
 abstract: Summury/abstract goes here fgasjfgs vgsdugfks fyoasf sdyfoidsy fyoaiyfoayf oafad faiyfliaufo ayfoayfoiayf afadyfadifyoay ffoayfoadfyoia foayfoia foayf oa yf oafy aofy oayf oafyoayf afy aify aiofyoiafy afafyayf aflayfiayfl afoa yfoaify aoyfoyia foay foayf oafy aoify aofy aoffy aoif aof afo
+tags:
+ - tag1
+ - other tag
+ - many more
 math: true
 ---
 
