@@ -67,8 +67,12 @@ Link other [post]({% post_url 2016-05-20-this-post-demonstrates-post-content-sty
 {% endcomment %}
 
 <center>
-<img src="/img/item-img1.jpg" alt="image demo" height="50" width="50" >
+<img src="/img/featue-bg.jpg" alt="image demo" height="50" width="50" >
 </center>
+
+or maybe like this
+
+![info-of-image]({{ base_url }}/img/featue-bg.jpg)
 
 ### A possible way to Cite 
 let's say, [1]
