@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Blog
-permalink: /blog/
 ---
 <!-- Slider Start -->
 <section id="global-header">
@@ -16,7 +15,7 @@ permalink: /blog/
     </div>
   </div>
 </section>
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
   <p class="post-date">{{ post.date | date_to_long_string }} <br>
@@ -39,3 +38,34 @@ permalink: /blog/
   </p>
 </div>
 {% endfor %}
+
+<!-- ================================================ -->
+
+<center>
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      < Prev &verbar;
+    </a>
+  {% else %}
+    <span class="previous"> < Prev &verbar; </span>
+  {% endif %}
+  <span class="page_number ">
+    {% for i in (1..paginator.total_pages) %}
+      {% if i == 1%}
+        <a href="{{ baseurl }}/blog/"> {{ i }} </a>
+      {% else %}
+        &nbsp; <a href="{{ baseurl }}/blog/page{{ i }}/"> {{ i }} </a> 
+      {% endif %}
+    {% endfor %}
+  </span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next"> &verbar; Next > </a>
+  {% else %}
+    <span class="next "> &verbar; Next > </span>
+  {% endif %}
+  <br>
+  Page: {{ paginator.page }} of {{ paginator.total_pages }}
+</div>
+</center>

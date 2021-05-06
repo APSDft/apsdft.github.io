@@ -19,6 +19,8 @@ cover: img/slider-bg.jpg
 logo: img/logo.png
 disqus-id: 
 markdown: kramdown
+paginate: 2
+paginate_path: "/blog/page:num/"
 descriptions:
   - cat: jekyll
     desc: Posts describing Jekyll setup techniques.
