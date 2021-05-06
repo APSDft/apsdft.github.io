@@ -23,7 +23,7 @@ permalink: /contact/
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <form>
+          <form id="contact_form" method="POST">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Your Name">
             </div>
@@ -33,12 +33,12 @@ permalink: /contact/
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Subject">
             </div>
-          </form>
+          </form>     
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <form>
+          <form id="msg" method="POST">
             <div class="form-group-2">
               <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
             </div>
@@ -47,6 +47,26 @@ permalink: /contact/
         </div>
       </div>
     </div>
+            <script>
+		  const scriptURL = 'https://script.google.com/macros/s/AKfycbz7nQew6wwaONKbhbajMfidujXhk8AnQkhUvRYb9vPnccuEe0o/exec'
+		  const form = getElementById("msg")
+		  const data = getElementById("contact_form","msg")
+
+		  form.addEventListener('submit', e => {
+		    e.preventDefault()
+		    fetch(scriptURL, { method: 'POST', body: new FormData(data)})
+		      .then(response => successmsgt(response))
+		      .catch(error => errormsgt(error))
+		  })
+		  function successmsgt(){
+		  document.getElementById("contact_form").reset();
+		  alert('Thank you for the message!');
+		  }
+		  function errormsgt(){
+		  document.getElementById("contact_form").reset();
+		  alert('An unknown error have occured, please try again after some time!');
+		  }
+	</script>     
     <div id="contact-box" class="row">
       <div class="col-md-12">
         <div class="block" style="text-align: center">
