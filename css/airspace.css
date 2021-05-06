@@ -380,7 +380,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #global-header .block {
   color: #E3E3E4;
   margin: 0 auto;
-  padding-left: 90px;
+  padding-left: 0px;
   text-align: center;
 }
 #global-header .block h1 {
@@ -691,7 +691,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 20px;
 }
 .address-block li i {
-  margin-right: 15px;
+  margin-right: 5px;
   font-size: 20px;
   width: 20px;
 }
@@ -700,14 +700,14 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 .social-icons li {
   display: inline-block;
-  margin: 0 6px;
+  margin: 0 3px;
 }
 .social-icons a {
   display: inline-block;
 }
 .social-icons i {
   color: #2C2C2C;
-  margin-right: 25px;
+  margin-right: 5px;
   font-size: 25px;
 }
 .google-map {

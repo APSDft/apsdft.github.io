@@ -21,7 +21,7 @@ permalink: /contact/
 <section id="contact-form">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-sm-12">
+      <!--<div class="col-md-6 col-sm-12">
         <div class="block">
           <form id="contact_form" method="POST">
             <div class="form-group">
@@ -46,34 +46,18 @@ permalink: /contact/
           </form>
         </div>
       </div>
+    </div>  -->  
+    
+    <div class="col-md-6 col-sm-12">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCsgVVRiHbEvKsRjlZMoxMhE6CudxRC8R8tanZ9Lp3VOUSgA/viewform?embedded=true" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
-            <script>
-		  const scriptURL = 'https://script.google.com/macros/s/AKfycbz7nQew6wwaONKbhbajMfidujXhk8AnQkhUvRYb9vPnccuEe0o/exec'
-		  const form = getElementById("msg")
-		  const data = getElementById("contact_form","msg")
-
-		  form.addEventListener('submit', e => {
-		    e.preventDefault()
-		    fetch(scriptURL, { method: 'POST', body: new FormData(data)})
-		      .then(response => successmsgt(response))
-		      .catch(error => errormsgt(error))
-		  })
-		  function successmsgt(){
-		  document.getElementById("contact_form").reset();
-		  alert('Thank you for the message!');
-		  }
-		  function errormsgt(){
-		  document.getElementById("contact_form").reset();
-		  alert('An unknown error have occured, please try again after some time!');
-		  }
-	</script>     
-    <div id="contact-box" class="row">
-      <div class="col-md-12">
-        <div class="block" style="text-align: center">
-          <h2>Stop By For A visit</h2>
+    
+    <div class="col-md-6 col-sm-12">
+          <div class="block" style="text-align: center">
+          <h2>Stop By For A visit</h2> <br>
           <ul class="address-block">
             <li>
-              <i class="fa fa-map-marker"></i> {{ site.data.about.address }}
+              <i class="fa fa-map-marker"></i>{{ site.data.about.address }}
             </li>
             <li>
               <i class="fa fa-envelope-o"></i>Email: {{ site.data.about.email }}
@@ -92,8 +76,36 @@ permalink: /contact/
             </li>
           {% endfor %}
           </ul>
+	</div>
+    </div>
+
+<!--    <div id="contact-box" class="row">
+      <div class="col-md-12">
+        <div class="block" style="text-align: center">
+          <h2>Stop By For A visit</h2>
+          <ul class="address-block">
+            <li>
+              <i class="fa fa-map-marker"></i> {{ site.data.about.address }}
+            </li>
+            <li>
+              <i class="fa fa-envelope-o"></i>Email: {{ site.data.about.email }}
+            </li> -->
+            <!--
+            <li>
+              <i class="fa fa-phone"></i>Phone:+88 01672 506 744
+            </li>
+            -->
+<!--          </ul> 
+
+          <ul class="social-icons">
+          {% for social in site.data.contacts.social-links %}
+            <li>
+              <a href="{{ social.link }}"><i class="{{ social.icon }}"></i></a>
+            </li>
+          {% endfor %}
+          </ul>
         </div>
-      </div>
+      </div> -->
      
 </section>
 <!-- Call to action Start -->
