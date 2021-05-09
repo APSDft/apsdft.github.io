@@ -1,13 +1,16 @@
 ---
+title: new title
 layout: post
 author: test author
-title: new title
-cover: /img/featue-bg.jpg
-abstract: Summury/abstract goes here fgasjfgs vgsdugfks fyoasf sdyfoidsy fyoaiyfoayf oafad faiyfliaufo ayfoayfoiayf afadyfadifyoay ffoayfoadfyoia foayfoia foayf oa yf oafy aofy oayf oafyoayf afy aify aiofyoiafy afafyayf aflayfiayfl afoa yfoaify aoyfoyia foay foayf oafy aoify aofy aoffy aoif aof afo
+cover: "/img/featue-bg.jpg"
+abstract: Summury/abstract goes here fgasjfgs vgsdugfks fyoasf sdyfoidsy fyoaiyfoayf
+  oafad faiyfliaufo ayfoayfoiayf afadyfadifyoay ffoayfoadfyoia foayfoia foayf oa yf
+  oafy aofy oayf oafyoayf afy aify aiofyoiafy afafyayf aflayfiayfl afoa yfoaify aoyfoyia
+  foay foayf oafy aoify aofy aoffy aoif aof afo
 tags:
- - tag1
- - other tag
- - many more
+- tag1
+- other tag
+- many more
 math: true
 ---
 
@@ -15,7 +18,7 @@ math: true
 
 ## This is done by listing below
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Check out the [Jekyll][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 This link is done by [inline](https://www.google.com) method
 
@@ -67,7 +70,7 @@ Link other [post]({% post_url 2016-05-20-this-post-demonstrates-post-content-sty
 {% endcomment %}
 
 <center>
-<img src="/img/featue-bg.jpg" alt="image demo" height="50" width="50" >
+<img src="{{ base_url }}/img/featue-bg.jpg" alt="image demo" height="50" width="50" >
 </center>
 
 or maybe like this

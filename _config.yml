@@ -17,9 +17,9 @@ url: null
 baseurl: ""
 cover: img/slider-bg.jpg
 logo: img/logo.png
-disqus-id: 
+disqus-id: https-apsdft-github-io 
 markdown: kramdown
-paginate: 2
+paginate: 3
 paginate_path: "/blog/page:num/"
 descriptions:
   - cat: jekyll
