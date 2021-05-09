@@ -49,6 +49,7 @@ permalink: "/"
   </div>
 </section>
 <!-- will disappear-->
+
 {% if site.data.feature %}
 <section id="feature">
 <div class="container">
@@ -58,12 +59,13 @@ permalink: "/"
       {% for para in site.data.feature.paragraph %}
       <p> {{ para }}</p>
       {% endfor %}
-      <!--<a href="{{ site.data.feature.but-url }}" class="btn btn-view-works"> {{ site.data.feature.but-title }} </a>-->
+      <a href="{{ base_url }}/img/CV_Arka_Prava_Sarkar.pdf" class="btn btn-view-works" target="_blank"> {{ site.data.feature.but-title }} </a>
     </div>
   </div>
 </div>
 </section>
 {% endif %}
+
 <!--upto this-->
 <!-- Service Start -->
 <!--
@@ -137,6 +139,7 @@ permalink: "/"
 </section>
 
 <!-- Call to action Start -->
+<!--
 <section id="call-to-action">
   <div class="container">
     <div class="row">
@@ -150,6 +153,7 @@ permalink: "/"
     </div>
   </div>
 </section>
+-->
 <!-- Content Start -->
 <!--
 <section id="testimonial">

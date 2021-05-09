@@ -63,7 +63,7 @@ inline test &nbsp; \\(p = \gamma mv \quad  \\)
 
 No laudem altera adolescens has, volumus lucilius eum no. Eam ei nulla audiam efficiantur. Suas affert per no, ei tale nibh sea. Sea ne magna harum, in denique scriptorem sea, cetero alienum tibique ei eos. Labores persequeris referrentur eos ei.
 
-Link other [post]({% post_url 2016-05-20-this-post-demonstrates-post-content-styles %}) using liquid tag
+Link other [post]({% post_url 2021-05-07-interview-experiences %}) using liquid tag
 
 {% comment %}
 ![train](/img/item-img1.jpg)
