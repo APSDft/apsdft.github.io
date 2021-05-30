@@ -19,7 +19,7 @@ cover: img/slider-bg.jpg
 logo: img/logo.png
 disqus-id: https-apsdft-github-io 
 markdown: kramdown
-paginate: 3
+paginate: 4
 paginate_path: "/blog/page:num/"
 descriptions:
   - cat: jekyll
